@@ -8,7 +8,7 @@ class UserCard extends React.Component  {
     };
 
     componentDidMount() {
-        axios.get("https://api.github.com/users/1like2learn/followers").then(res => {
+        axios.get(`https://api.github.com/users/${this.props.userData.login}/followers`).then(res => {
         //   console.log("Follower res.data",res.data)
           this.setState({
             followers: res.data
@@ -17,11 +17,20 @@ class UserCard extends React.Component  {
       }
 
     render(){
+        console.log(this.props.userData)
         return(
             <div>
-                {this.state.followers.map( follower => {
-                    return (<UserFollowers props={follower} key={follower.login}/>)
-                })}
+                <h2>{this.props.userData.login}'s Profile</h2>
+                <img src = {this.props.userData.avatar_url}/>
+                <p>Bio: {this.props.userData.bio}</p>
+                <p>Email: {this.props.userData.email}</p>
+                <h3>Followers:</h3>
+                <ul>
+                    {this.state.followers.map( follower => {
+                        return (<UserFollowers follower={follower} key={follower.login}/>)
+                    })}
+
+                </ul>
             </div>
         )
     }

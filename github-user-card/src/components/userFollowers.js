@@ -1,12 +1,10 @@
 import React from 'react';
 
 const UserFollowers = (props) => {
-    const { UserFollowers } = props
+    const { follower } = props
 
     return(
-        <div>
-
-        </div>
+        <li>{follower.login}</li>
     )
 }
 
