@@ -66,3 +66,67 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+avatar_url: "https://avatars1.githubusercontent.com/u/64435210?v=4"
+​​
+bio: null
+​​
+blog: ""
+​​
+company: null
+​​
+created_at: "2020-04-27T18:44:37Z"
+​​
+email: null
+​​
+events_url: "https://api.github.com/users/1like2learn/events{/privacy}"
+​​
+followers: 8
+​​
+followers_url: "https://api.github.com/users/1like2learn/followers"
+​​
+following: 7
+​​
+following_url: "https://api.github.com/users/1like2learn/following{/other_user}"
+​​
+gists_url: "https://api.github.com/users/1like2learn/gists{/gist_id}"
+​​
+gravatar_id: ""
+​​
+hireable: null
+​​
+html_url: "https://github.com/1like2learn"
+​​
+id: 64435210
+​​
+location: null
+​​
+login: "1like2learn"
+​​
+name: "Nathan"
+​​
+node_id: "MDQ6VXNlcjY0NDM1MjEw"
+​​
+organizations_url: "https://api.github.com/users/1like2learn/orgs"
+​​
+public_gists: 0
+​​
+public_repos: 30
+​​
+received_events_url: "https://api.github.com/users/1like2learn/received_events"
+​​
+repos_url: "https://api.github.com/users/1like2learn/repos"
+​​
+site_admin: false
+​​
+starred_url: "https://api.github.com/users/1like2learn/starred{/owner}{/repo}"
+​​
+subscriptions_url: "https://api.github.com/users/1like2learn/subscriptions"
+​​
+twitter_username: null
+​​
+type: "User"
+​​
+updated_at: "2020-07-06T23:42:35Z"
+​​
+url: "https://api.github.com/users/1like2learn"

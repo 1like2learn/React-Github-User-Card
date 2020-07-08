@@ -1,21 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
 import UserCard from './components/userCard';
+
+const userTestData = {
+  username: 'buddy',
+  followers: ['tim', 'harold', 'jimmay']
+}
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      userData: {}
+      userData: {...userTestData}
     }
+  }
+  
+  componentDidMount() {
+    axios.get('https://api.github.com/users/1like2learn')
+    .then(res => {
+      console.log('res', res);
+      
+    })
+    
   }
   
   render(){
 
     return (
       <div>
-        <UserCard />
+        <UserCard userData = {this.state.userData}/>
       </div>
     );
   }

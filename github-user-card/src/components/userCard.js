@@ -1,16 +1,30 @@
 import React from 'react';
+import axios from 'axios';
 import UserFollowers from './userFollowers';
 
-const UserCard = (props) => {
-    const { userData } = props
-    
-    return(
-        <div>
-            {userData.followers.map( follower => {
-                <UserFollowers props={follower}/>
-            })}
-        </div>
-    )
+class UserCard extends React.Component  {
+    state = {
+        followers: []
+    };
+
+    componentDidMount() {
+        axios.get("https://api.github.com/users/1like2learn/followers").then(res => {
+        //   console.log("Follower res.data",res.data)
+          this.setState({
+            followers: res.data
+          });
+        });
+      }
+
+    render(){
+        return(
+            <div>
+                {this.state.followers.map( follower => {
+                    return (<UserFollowers props={follower} key={follower.login}/>)
+                })}
+            </div>
+        )
+    }
 }
 
 export default UserCard
