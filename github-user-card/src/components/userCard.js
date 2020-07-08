@@ -9,15 +9,15 @@ class UserCard extends React.Component  {
 
     componentDidMount() {
         axios.get(`https://api.github.com/users/${this.props.userData.login}/followers`).then(res => {
-        //   console.log("Follower res.data",res.data)
-          this.setState({
+            console.log("Follower res.data",res.data)
+            this.setState({
             followers: res.data
           });
         });
       }
 
     render(){
-        console.log(this.props.userData)
+        // console.log(this.props.userData)
         return(
             <div>
                 <h2>{this.props.userData.login}'s Profile</h2>

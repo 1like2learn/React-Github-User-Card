@@ -19,7 +19,7 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('https://api.github.com/users/1like2learn')
     .then(res => {
-      console.log('res', res);
+      console.log('user response data', res.data);
       this.setState({
         userData: res.data
       })
